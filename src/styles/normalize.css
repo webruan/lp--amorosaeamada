@@ -1,0 +1,266 @@
+﻿
+:root {
+  --color-primary--2: #E59395;
+  --color-primary--1: #E13630;
+  --color-primary: #A50D18;
+
+  --color-secondary: #FCB054;
+  --color-secondary-1: #F6841C;
+  --color-secondary-2: #DE4A16;
+
+  --color-black--1: #664345;
+  --color-black: #362024;
+
+  --color-white-1: #D4CAB9;
+  --color-white: #F5F3EC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  /* Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%;
+  /*Prevent adjustments of font size after orientation changes in iOS. */
+}
+
+body {
+  margin: 0;
+  /* Remove the margin in all browsers. */
+
+  background-color: var(--color-white);
+
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+
+  position: relative;
+
+  display: block;
+}
+
+body,
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar,
+html::-webkit-scrollbar-track,
+html::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Correção de estilos de elementos padrão */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora';
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h1 span, 
+h2 span, 
+h3 span, 
+h4 span, 
+h5 span, 
+h6 span {
+  font-family: 'Lora';
+  line-height: 120%;
+}
+
+h1, h2, h3, h4, h5, h6, p, small, span {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  color: var(--color-black);
+
+  font-display: swap;
+}
+
+p, small, a {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+p span,
+small span,
+a span {
+  font-family: 'Comfortaa', sans-serif;
+  line-height: 150%;
+}
+
+i {
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+a.cta {
+  width: fit-content;
+
+  padding: 16px 16px 16px 24px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 32px;
+  background: linear-gradient(
+    135deg, 
+    #374a21 0%, 
+    #2b3e17 100%
+  );
+  color: var(--color-white);
+
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  transition: all 500ms ease-in-out;
+}
+
+a.cta:hover {
+  padding: 16px 8px 16px 32px;
+  background: linear-gradient(
+    135deg, 
+    #374a21 0%, 
+    #2b3e17 100%
+  );
+  box-shadow: 0 0 16px 0 rgba(229, 147, 149, 0.5);
+  transition: all 500ms ease-in-out;
+}
+
+a.cta ion-icon {
+  padding: 4px;
+  background-color: var(--color-white);
+  color: var(--color-secondary-2);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(54, 32, 36, 0.5);
+  font-size: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+a.cta:hover ion-icon {
+  background-color: var(--color-secondary-2);
+  color: var(--color-white);
+  box-shadow: none;
+  transition: all 500ms ease-in-out;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  object-fit: contain;
+  border-style: none;
+  -webkit-user-drag: none;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+
+  position: relative;
+  margin: 0;
+  padding: 64px 0;
+}
+
+.column {
+  width: 100%;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.f-b {
+  font-weight: 700;
+}
+
+.c-p0 {
+  color: var(--color-primary);
+}
+
+.c-p--1 {
+  color: var(--color-primary--1);
+}
+
+.c-p--2 {
+  color: var(--color-primary--2);
+}
+
+.c-s0 {
+  color: var(--color-secondary);
+}
+
+.c-s-1 {
+  color: var(--color-secondary-1);
+}
+
+.c-s-2 {
+  color: var(--color-secondary-2);
+}
+
+.c-b0 {
+  color: var(--color-black);
+}
+
+.c-b--1 {
+  color: var(--color-black--1);
+}
+
+.c-w0 {
+  color: var(--color-white);
+}
+
+.c-w-1 {
+  color: var(--color-white-1);
+}

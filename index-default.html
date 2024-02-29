@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@webruan">
+
+    <!-- Social Media Sharing -->
+    <meta property="og:url" content="https://cursodoamor.com.br/amorosaeamada">
+    <meta property="og:site_name" content="Curso do Amor - Amorosa & Amada">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amorosa & Amada">
+    <meta property="og:description" content="Estamos criando uma comunidade, um espaço seguro onde você pode se redescobrir, se curar e se preparar para receber o amor verdadeiro.">
+
+    <!-- Search Engines -->
+    <meta name="keywords" content="amorosa & amada, curso do amor, relacionamento saudável, dicas de namoro, como conquistar alguém, amor e relacionamentos, como manter um relacionamento saudável, como superar o fim de um relacionamento, como ter assuntos envolventes">
+
+    <link rel="shortcut icon" href="./src/assets/images/favicon.webp" type="image/x-icon">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Comfortaa:wght@300;400;700&display=swap" rel="preload" as="style" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Hotmart checkout preconnect -->
+    <link rel="preconnect" href="https://pay.hotmart.com/">
+
+    <link rel="stylesheet" href="./src/styles/normalize-min.css">
+    <link rel="stylesheet" href="./src/styles/desktop-min.css" async>
+    <link rel="stylesheet" href="./src/styles/mobile-min.css" media="(max-width: 768px)" async>
+    
+    <title>Amorosa & Amada</title>
+
+    <script>
+      window.addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+          // Recarregamento do cache (mobile)
+          window.scrollTo(0, 0);
+        }
+      });
+
+      function scrollToTopSmooth() {
+        const scrollToTop = () => {
+          if (window.scrollY != 0) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            requestAnimationFrame(scrollToTop);
+          }
+        };
+        scrollToTop();
+      }
+
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 100);
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1>Amorosa & Amada</h1>
+          <div class="row main">
+            <div class="video" id="video">
+                <div class="img" id="video-thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./src/assets/images/desktop/thumb.webp">
+                    <source media="(min-width: 768px)" srcset="./src/assets/images/tablet/thumb.webp">
+                    <source media="(min-width: 320px)" srcset="./src/assets/images/mobile/thumb.webp">
+                    <img loading="lazy" src="./src/assets/images/desktop/thumb.webp">
+                  </picture>
+                </div>
+            </div>
+
+            <div class="column main">
+              <div class="column text">
+                <h2>Descubra o Poder da Transformação</h2>
+                <p>
+                  Para mulheres que querem se <span class="f-b c-p0">reconectar,</span> se <span class="f-b c-p0">reinventar</span> e encontrar o <span class="f-b c-p0">amor verdadeiro.</span>
+                </p>
+              </div>
+
+              <a href="#offer" class="row cta">Comece Sua Jornada Agora <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="imgs">
+            <div class="img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./src/assets/images/desktop/header-pami.webp">
+                <source media="(min-width: 768px)" srcset="./src/assets/images/tablet/header-pami.webp">
+                <source media="(min-width: 320px)" srcset="./src/assets/images/mobile/header-pami.webp">
+                <img loading="lazy" src="./src/assets/images/desktop/header-pami.webp">
+              </picture>
+            </div>
+            <div class="img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./src/assets/images/desktop/header-background.webp">
+                <source media="(min-width: 768px)" srcset="./src/assets/images/tablet/header-background.webp">
+                <source media="(min-width: 320px)" srcset="./src/assets/images/mobile/header-background.webp">
+                <img loading="lazy" src="./src/assets/images/desktop/header-background.webp">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey">
+        <div class="container">
+          <div class="column main">
+            <div class="column title">
+              <h5>Bem-vinda à sua</h5>
+              <h3>jornada de transformação</h3>
+            </div>
+
+            <div class="text">
+              <p>
+                Na comunidade <span class="f-b c-p--1">Amorosa & Amada,</span> não estamos apenas oferecendo um <del>curso</del>. 
+              </p>
+            </div>
+
+            <div class="row main">
+              <p>
+                Estamos criando uma comunidade, um espaço seguro onde você pode se <span class="f-b c-p--2">redescobrir,</span> se <span class="f-b c-p--2">curar</span> e se <span class="f-b c-p--2">preparar</span> para receber o amor verdadeiro.
+              </p>
+
+              <p>
+                Com a orientação de uma especialista em relacionamentos, você será <span class="f-b c-p--2">capacitada para enfrentar qualquer desafio</span> e poder ter finalmente a vida amorosa que merece.
+              </p>
+            </div>
+
+            <div class="img img-load" id="journey-women"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="column main">
+            <div class="column title">
+              <h5>Conheça sua nova conselheira:</h5>
+              <h3>Pâmi Garcia</h3>
+            </div>
+
+            <div class="row main">
+              <p>
+                Pâmi Garcia, <span class="f-b c-b0">filósofa, psicanalista</span> e autora Best Seller, é a mente brilhante por trás da comunidade <span class="f-b c-p0">Amorosa & Amada.</span> 
+              </p>
+
+              <p id="second">
+                Sua missão é guiá-la para que você tenha o amor próprio e o <span class="f-b c-p0">relacionamento afetivo que sempre desejou.</span>
+              </p>
+
+              <p id="third">
+                Depois de passar por situações <del>péssimas</del> no relacionamento anterior e com sua vasta experiência em ajudar mulheres a transformarem suas vidas amorosas, ela se tornou uma <span class="f-b c-p0">referência no mundo dos relacionamentos.</span>
+              </p>
+
+              <div class="img img-load" id="about-pami"></div>
+            </div>
+          </div>
+          <span class="logo">Amorosa & Amada</span>
+          <span class="right circle"></span>
+          <span class="left circle"></span>
+        </div>
+      </section>
+
+      <section id="unique">
+        <div class="container">
+          <div class="column main">
+            <div class="column title">
+              <h3>O que nos torna <span class="f-b c-p--1">únicas</span></h3>
+              <p>
+                Na comunidade <span class="f-b c-p--1">Amorosa & Amada,</span> entendemos suas lutas e suas aspirações. Somos mais do que um curso, <u>somos um refúgio</u> para mulheres que buscam <span class="f-b c-b0">autoconfiança, autoestima e conexões significativas.</span> 
+              </p>
+            </div>
+
+            <div class="row main">
+              <div class="img img-load" id="unique-first"></div>
+              <div class="img img-load" id="unique-second"></div>
+              <div class="img img-load" id="unique-third"></div>
+            </div>
+
+            <p>
+              Com nosso programa exclusivo de dezenas de aulas, suporte personalizado e uma comunidade solidária, estamos aqui para ajudá-la a se tornar a melhor versão de si mesma e estar preparada para receber o amor que você merece.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="win">
+        <div class="container">
+          <div class="column main">
+            <h3>O que você <span class="f-b c-p--1">ganhará</span></h3>
+
+            <div class="column content">
+              <div class="row">
+                <div class="column">
+                  <p>
+                    Conexão com pessoas alinhadas ao seu propósito
+                  </p>
+                  <span></span>
+                </div>
+
+                <div class="column">
+                  <p>
+                    Identificação de potenciais companheiros em qualquer ambiente
+                  </p>
+                  <span></span>
+                </div>
+
+                <div class="column">
+                  <p>
+                    Menos cansaço na busca do amor
+                  </p>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p>
+                    Aumento de autoconfiança
+                  </p>
+                  <span></span>
+                </div>
+
+                <div class="column">
+                  <p>
+                    Domínio da arte da sedução
+                  </p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#offer" class="row cta">Explore Todos os Benefícios <ion-icon name="arrow-forward-outline"></ion-icon></a>
+          </div>
+
+          <div class="img img-load" id="win-background"></div>
+          <span class="logo">Amorosa & Amada</span>
+        </div>
+      </section>
+
+      <section id="for">
+        <div class="container">
+          <div class="row main">
+            <h3>Ideal para mulheres que...</h3>
+
+            <div class="grid">
+              <div class="img img-load" id="for-woman"></div>
+
+              <p>
+                Não sabem por onde começar
+              </p>
+
+              <p>
+                Estão com os encontros travados
+              </p>
+
+              <p>
+                Não querem mais a dor da rejeição
+              </p>
+
+              <p>
+                São tímidas e inseguras
+              </p>
+
+              <p>
+                Querem se sentir desejadas
+              </p>
+
+              <p>
+                Buscam entender como se permitir ser conquistada
+              </p>
+
+              <p>
+                Não têm tempo a perder
+              </p>
+
+              <p>
+                Afasta pessoas no início da relação
+              </p>
+            </div>
+          </div>
+          <span class="circle"></span>
+          <span class="light"></span>
+        </div>
+      </section>
+
+      <section id="feedback">
+        <div class="container">
+          <div class="row main">
+            <div class="column">
+              <span>“</span>
+              <h4>Veja o que nossas alunas estão dizendo:</h4>
+              <p>
+                Centenas de mulheres já transformaram suas vidas amorosas com a comunidade <span class="f-b c-w-1">Amorosa & Amada.</span> Veja o que algumas delas têm a dizer sobre sua <span class="f-b c-w-1">jornada de crescimento pessoal e descoberta do verdadeiro amor.</span>
+              </p>
+
+              <div class="row arrows">
+                <ion-icon name="arrow-back-outline" id="prev"></ion-icon>
+                <ion-icon name="arrow-forward-outline" id="next"></ion-icon>
+              </div>
+            </div>
+
+            <div class="row carousel">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="get">
+        <div class="container">
+          <div class="column main">
+            <div class="column title">
+              <h3>O que você <span class="f-b c-p--1">receberá</span></h3>
+              <p>
+                Com nosso programa abrangente, você terá acesso a:
+              </p>
+            </div>
+
+            <div class="grid">
+              <div class="column">
+                <div class="img img-load" id="get-first"></div>
+                <p>
+                  Vídeo aulas para desenvolver sua mentalidade.
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="img img-load" id="get-second"></div>
+                <p>
+                  Roteiro de 30 dias para transformar suas emoções.
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="img img-load" id="get-third"></div>
+                <p>
+                  Comunidade de mulheres com mesmo objetivo que o seu.
+                </p>
+              </div>
+              
+              <div class="column">
+                <div class="img img-load" id="get-fourth"></div>
+                <p>
+                  Aulas ao vivo exclusivas e mensais com a Pâmi.
+                </p>
+              </div>
+              
+              <div class="column">
+                <div class="img img-load" id="get-fifth"></div>
+                <p>
+                  Exercícios para autoestima, autoconfiança e cura.
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="img img-load" id="get-sixth"></div>
+                <p>
+                  Exercícios para você olhar para fora, ver o mundo exterior.
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="img img-load" id="get-seventh"></div>
+                <p>
+                  Exercícios para você olhar para dentro e se compreender.
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="img img-load" id="get-eighth"></div>
+                <p>
+                  Sugestões de frases para você copiar e mandar para ele.
+                </p>
+              </div>
+            </div>
+
+            <p>
+              Além disso, você vai ter todas as suas dúvidas respondidas pela Pâmi. <span class="f-b c-w-1">Tudo projetado para capacitá-la e manter um relacionamento feliz e saudável.</span>
+            </p>
+          </div>
+          <span class="logo">Amorosa & Amada</span>
+          <div class="img img-load" id="get-line1"></div>
+          <div class="img img-load" id="get-line2"></div>
+          <div class="img img-load" id="get-line3"></div>
+        </div>
+      </section>
+
+      <section id="offer">
+        <div class="container">
+          <div class="column main">
+            <div class="column text">
+              <div class="column title">
+                <h5>Comece sua jornada</h5>
+                <h3>Hoje Mesmo</h3>
+              </div>
+
+              <p>
+                <u>Não deixe que o medo ou a incerteza impeçam você de viver sua melhor vida</u>. Junte-se a nós na comunidade <span class="f-b c-b--1">Amorosa & Amada</span> e <span class="f-b c-b0">comece sua jornada de transformação hoje mesmo.</span>
+              </p>
+            </div>
+
+            <div class="column table">
+              <div class="row">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <h4>oferta</h4>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+
+              <div class="column price">
+                <p>De <del>R$999,00</del> por</p>
+                <small>12x de</small>
+
+                <div class="row">
+                  <small>R$</small>
+                  <h4>39,90</h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <p>Acesso por um ano</p>
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <a target="_blank" rel="noopener noreferrer" href="https://pay.hotmart.com/I72480059J?off=x9udxaij&bid=1708790316930" class="row cta">Junte-se agora <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+
+            <p>
+              Você merece amor, felicidade e realização. Então clique no botão acima para se inscrever agora.
+            </p>
+          </div>
+
+          <div class="img img-load" id="offer-pami"></div>
+        </div>
+      </section>
+
+      <section id="warranty">
+        <div class="container">
+          <div class="row main">
+            <div class="img img-load" id="warranty-stamp"></div>
+
+            <div class="column text">
+              <div class="column title">
+                <h5>Satisfação garantida ou</h5>
+                <h3>Seu Dinheiro de Volta</h3>
+              </div>
+
+              <p>
+                Estamos tão confiantes de que você encontrará valor na comunidade <span class="f-b c-b0">Amorosa & Amada</span> que oferecemos uma garantia de satisfação. Se por qualquer motivo você não estiver completamente satisfeita com nosso programa, <span class="f-b c-b0">devolveremos seu dinheiro sem perguntas.</span> <u>Seja você mesma, seja confiante, seja conquistadora.</u> Comece sua jornada agora!
+              </p>
+            </div>
+          </div>
+
+          <span class="logo">Amorosa & Amada</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="column main">
+          <div class="row main">
+            <div class="column social">
+              <div class="row">
+                <ion-icon name="mail-open-outline"></ion-icon>
+                <p>contato@cursodoamor.com.br</p>
+              </div>
+
+              <div class="row">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <p>+55 (21) 9 9817-9739</p>
+              </div>
+
+              <div class="row">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>@pamigarcia.psic</p>
+              </div>
+            </div>
+
+            <h4>Amorosa & Amada</h4>
+
+            <div class="column infos">
+              <p>
+                <a target="_blank" href="./pages/privacidade.html">Politicas de privacidade</a> | <a target="_blank" href="./pages/termos.html">Termos de uso</a>
+              </p>
+
+              <p><span class="f-b c-b0">CNPJ:</span> 43.516.646/0001-39</p>
+            </div>
+          </div>
+
+          <small>© 2024 Amorosa & Amada. Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/lazy-images-min.js"></script>
+    <script src="./src/js/load-video-min.js"></script>
+    <script src="./src/js/carousel-min.js" defer></script>
+    <script src="./src/js/tags-min.js" defer></script>
+    <script src="./src/js/order-changer-min.js" defer></script>
+  </body>
+</html>
